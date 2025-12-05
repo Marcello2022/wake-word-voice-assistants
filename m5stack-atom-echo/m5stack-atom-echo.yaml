@@ -48,7 +48,7 @@ microphone:
 speaker:
   - platform: i2s_audio
     id: echo_speaker
-    i2s_dout_pin: GPIO22
+    i2s_dout_pin: GPIO21 # This "wrong" pin disables the internal atom echo speaker and only uses the external speaker defined in on_tts_end. The correct pin would be GPIO22
     dac_type: external
     bits_per_sample: 16bit
     sample_rate: 16000
